@@ -5,7 +5,7 @@ let main = document.querySelector("main");
 const updCards = function(cats) {
     main.innerHTML = "";
     cats.forEach(function(cat) {
-        let card = `<div class="${cat.favourite ? "card like" : "card"}" style="background-image: url(${cat.img_link})">
+        let card = `<div class="${cat.favourite ? "card like" : "card"}" style="background-image: url(${cat.img_link || "img/cat.jpg"})">
             <span>${cat.name}</span>
         </div>`;
         main.innerHTML += card
