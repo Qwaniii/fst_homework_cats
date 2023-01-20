@@ -31,7 +31,7 @@ let closePopupForm = document.querySelector(".popup-close");
 
 addBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    if (!popupForm.classList.contains("acrive")) {
+    if (!popupForm.classList.contains("active")) {
         popupForm.classList.add("active");
         popupForm.parentElement.classList.add("active");
     }
