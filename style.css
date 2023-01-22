@@ -18,7 +18,7 @@ header, footer {
     justify-content:space-between;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 0 2px 0 #0002;
+    box-shadow: 0 0 2px 0 #0007;
 }
 
 main {
@@ -83,6 +83,7 @@ main {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: transform .3s ease-out;
 }
 
 .card>* {
@@ -99,7 +100,11 @@ main {
     bottom: 0;
     background-color: #fff8;
     backdrop-filter: blur(2px);
-    transition: backdrop-filter .3s linear;
+    transition: backdrop-filter .3s linear;   
+}
+
+.card:hover {
+    transform: scale(1.13);
 }
 
 .card:hover::before {
